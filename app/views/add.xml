@@ -1,0 +1,7 @@
+<Alloy>
+  <Window id="addWin" title="Add Item" class="container" modal="true" onOpen="focusTextField">
+    <TextField id="itemField" hintText="What do you need to do?" onReturn="closeKeyboard" accessibilityLabel="Todo field"/>
+    <Button class="button" onClick="addItem" accessibilityLabel="Add item">Add Item</Button>
+    <Button class="button" onClick="closeWindow">Cancel</Button>
+  </Window>
+</Alloy>

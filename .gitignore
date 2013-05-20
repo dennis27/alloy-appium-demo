@@ -1,0 +1,10 @@
+.DS_Store
+build.log
+build
+npm-debug.log
+tmp
+Resources/*
+!Resources/alloy/
+Resources/alloy/controllers/*
+!Resources/app.js
+!Resources/alloy.js

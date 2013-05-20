@@ -1,0 +1,7 @@
+<Alloy>
+  <TableViewRow id="row">
+    <ImageView id="check" onClick="toggleStatus"/>
+    <Label id="task" text="{item}"/>
+    <Button id="remove" onClick="deleteTask" accessibilityLabel="Delete item">Delete item</Button>
+  </TableViewRow>
+</Alloy>
