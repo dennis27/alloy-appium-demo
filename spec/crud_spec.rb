@@ -3,14 +3,14 @@ require 'spec_helper'
 describe "Todo app" do
   it "can add a todo item" do
     add_todo
-    list_item = xpath('//tableview[1]/cell[1]/text[1]').first
+    list_item = xpath('//UIATableView[1]/UIATableCell[1]/UIAStaticText[1]').first
     list_item.text.should eq '[Buy milk]'
   end
 
   it "can delete a todo item" do
     add_todo
     find("Delete item").click
-    list_item = xpath('//tableview[1]/cell[1]/text[1]')
+    list_item = xpath('//UIATableView[1]/UIATableCell[1]/UIAStaticText[1]')
     list_item.size.should eq 0
   end
 

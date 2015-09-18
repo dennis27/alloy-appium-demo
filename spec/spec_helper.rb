@@ -1,9 +1,9 @@
 require 'selenium-webdriver'
 
 capabilities = {
-  'browserName' => 'iOS',
-  'platform' => 'Mac',
-  'version' => '6.1',
+  'deviceName' => '=iPhone 4s (8.4 Simulator)',
+  'platformName' => 'iOS',
+  'platformVersion' => '8.4',
   'app' => File.expand_path('./build/iphone/build/Debug-iphonesimulator/alloy-todo.app')
 }
 
