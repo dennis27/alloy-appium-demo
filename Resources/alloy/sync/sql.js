@@ -260,7 +260,7 @@ function installDatabase(config) {
     config.columns = columns;
     rs.close();
     if (config.adapter.idAttribute) {
-        if (!_.contains(_.keys(config.columns), config.adapter.idAttribute)) throw 'config.adapter.idAttribute "' + config.adapter.idAttribute + '" not found in list of columns for table "' + table + '"\n' + "columns: [" + _.keys(config.columns).join(",") + "]";
+        if (!_.contains(_.keys(config.columns), config.adapter.idAttribute)) throw 'config.adapter.idAttribute "' + config.adapter.idAttribute + '" not found in list of columns for table "' + table + '"\ncolumns: [' + _.keys(config.columns).join(",") + "]";
     } else {
         Ti.API.info('No config.adapter.idAttribute specified for table "' + table + '"');
         Ti.API.info('Adding "' + ALLOY_ID_DEFAULT + '" to uniquely identify rows');
